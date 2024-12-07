@@ -1,7 +1,7 @@
 import { useActiveFieldMetadataItems } from '@/object-metadata/hooks/useActiveFieldMetadataItems';
 import { ObjectMetadataItem } from '@/object-metadata/types/ObjectMetadataItem';
+import { useGetQueryVariablesFromView } from '@/views/hooks/useGetQueryVariablesFromView';
 import { useViewOrDefaultViewFromPrefetchedViews } from '@/views/hooks/useViewOrDefaultViewFromPrefetchedViews';
-import { getQueryVariablesFromView } from '@/views/utils/getQueryVariablesFromView';
 import { useIsFeatureEnabled } from '@/workspace/hooks/useIsFeatureEnabled';
 
 export const useQueryVariablesFromActiveFieldsOfViewOrDefaultView = ({
@@ -21,6 +21,8 @@ export const useQueryVariablesFromActiveFieldsOfViewOrDefaultView = ({
   });
 
   const isJsonFilterEnabled = useIsFeatureEnabled('IS_JSON_FILTER_ENABLED');
+
+  const { getQueryVariablesFromView } = useGetQueryVariablesFromView();
 
   const { filter, orderBy } = getQueryVariablesFromView({
     fieldMetadataItems: activeFieldMetadataItems,

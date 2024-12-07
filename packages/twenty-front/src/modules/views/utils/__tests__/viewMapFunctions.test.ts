@@ -8,7 +8,7 @@ import { ViewFilterOperand } from '@/views/types/ViewFilterOperand';
 import { ViewSort } from '@/views/types/ViewSort';
 import { mapColumnDefinitionsToViewFields } from '@/views/utils/mapColumnDefinitionToViewField';
 import { mapViewFieldsToColumnDefinitions } from '@/views/utils/mapViewFieldsToColumnDefinitions';
-import { mapViewFiltersToFilters } from '@/views/utils/mapViewFiltersToFilters';
+import { useMapViewFiltersToFilters } from '@/views/utils/mapViewFiltersToFilters';
 import { mapViewSortsToSorts } from '@/views/utils/mapViewSortsToSorts';
 import { FieldMetadataType } from '~/generated/graphql';
 
@@ -68,7 +68,7 @@ describe('mapViewFiltersToFilters', () => {
       },
     ];
     expect(
-      mapViewFiltersToFilters(viewFilters, [
+      useMapViewFiltersToFilters(viewFilters, [
         {
           ...baseDefinition,
           type: 'FULL_NAME',

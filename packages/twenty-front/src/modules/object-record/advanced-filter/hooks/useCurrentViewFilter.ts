@@ -1,7 +1,7 @@
 import { useRecoilComponentValueV2 } from '@/ui/utilities/state/component-state/hooks/useRecoilComponentValueV2';
 import { useGetCurrentView } from '@/views/hooks/useGetCurrentView';
+import { useMapViewFiltersToFilters } from '@/views/hooks/useMapViewFiltersToFilters';
 import { availableFilterDefinitionsComponentState } from '@/views/states/availableFilterDefinitionsComponentState';
-import { mapViewFiltersToFilters } from '@/views/utils/mapViewFiltersToFilters';
 
 export const useCurrentViewFilter = ({
   viewFilterId,
@@ -13,6 +13,8 @@ export const useCurrentViewFilter = ({
   );
 
   const { currentViewWithCombinedFiltersAndSorts } = useGetCurrentView();
+
+  const { mapViewFiltersToFilters } = useMapViewFiltersToFilters();
 
   const viewFilter = currentViewWithCombinedFiltersAndSorts?.viewFilters.find(
     (viewFilter) => viewFilter.id === viewFilterId,

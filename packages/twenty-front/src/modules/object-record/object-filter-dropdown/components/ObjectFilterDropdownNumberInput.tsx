@@ -24,7 +24,7 @@ export const ObjectFilterDropdownNumberInput = () => {
   const selectedFilter = useRecoilValue(selectedFilterState);
 
   const [inputValue, setInputValue] = useState(
-    () => selectedFilter?.value || '',
+    () => (selectedFilter?.value as string) || '',
   );
 
   const handleInputRef = useCallback(

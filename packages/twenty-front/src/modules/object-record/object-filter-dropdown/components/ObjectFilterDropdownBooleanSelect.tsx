@@ -75,7 +75,7 @@ export const ObjectFilterDropdownBooleanSelect = () => {
       operand: selectedOperandInDropdown,
       displayValue: value ? 'True' : 'False',
       fieldMetadataId: filterDefinitionUsedInDropdown.fieldMetadataId,
-      value: value.toString(),
+      value,
       viewFilterGroupId: selectedFilter?.viewFilterGroupId,
     });
 

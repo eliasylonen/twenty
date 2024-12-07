@@ -31,7 +31,7 @@ import { Filter } from '@/object-record/object-filter-dropdown/types/Filter';
 import { getEmptyRecordGqlOperationFilter } from '@/object-record/record-filter/utils/getEmptyRecordGqlOperationFilter';
 import { ViewFilterGroup } from '@/views/types/ViewFilterGroup';
 import { ViewFilterGroupLogicalOperator } from '@/views/types/ViewFilterGroupLogicalOperator';
-import { resolveFilterValue } from '@/views/view-filter-value/utils/resolveFilterValue';
+import { resolveDateViewFilterValue } from '@/views/view-filter-value/utils/resolveDateViewFilterValue';
 import { endOfDay, roundToNearestMinutes, startOfDay } from 'date-fns';
 import { z } from 'zod';
 
@@ -124,10 +124,8 @@ const computeFilterRecordGqlOperationFilter = (
       }
     case 'DATE':
     case 'DATE_TIME': {
-      const resolvedFilterValue = resolveFilterValue(filter);
       const now = roundToNearestMinutes(new Date());
-      const date =
-        resolvedFilterValue instanceof Date ? resolvedFilterValue : now;
+      const date = filter.value instanceof Date ? filter.value : now;
 
       switch (filter.operand) {
         case ViewFilterOperand.IsAfter: {
@@ -155,13 +153,10 @@ const computeFilterRecordGqlOperationFilter = (
         case ViewFilterOperand.IsRelative: {
           const dateRange = z
             .object({ start: z.date(), end: z.date() })
-            .safeParse(resolvedFilterValue).data;
+            .safeParse(filter.value).data;
 
-          const defaultDateRange = resolveFilterValue({
+          const defaultDateRange = resolveDateViewFilterValue({
             value: 'PAST_1_DAY',
-            definition: {
-              type: 'DATE',
-            },
             operand: ViewFilterOperand.IsRelative,
           });
 
@@ -187,8 +182,8 @@ const computeFilterRecordGqlOperationFilter = (
           };
         }
         case ViewFilterOperand.Is: {
-          const isValid = resolvedFilterValue instanceof Date;
-          const date = isValid ? resolvedFilterValue : now;
+          const isValid = filter.value instanceof Date;
+          const date = isValid ? filter.value : now;
 
           return {
             and: [
@@ -611,9 +606,7 @@ const computeFilterRecordGqlOperationFilter = (
         );
       }
 
-      const options = resolveFilterValue(
-        filter as Filter & { definition: { type: 'MULTI_SELECT' } },
-      );
+      const options = z.array(z.string()).parse(filter.value);
 
       if (options.length === 0) return;
 
@@ -660,9 +653,7 @@ const computeFilterRecordGqlOperationFilter = (
           filter.definition,
         );
       }
-      const options = resolveFilterValue(
-        filter as Filter & { definition: { type: 'SELECT' } },
-      );
+      const options = z.array(z.string()).parse(filter.value);
 
       if (options.length === 0) return;
 

@@ -107,7 +107,7 @@ export const useRecordsForSelect = ({
     objectNameSingular === 'workspaceMember'
       ? [
           {
-            id: 'me',
+            id: 'CURRENT_WORKSPACE_MEMBER',
             name: 'Me',
             isSelected: false,
           },

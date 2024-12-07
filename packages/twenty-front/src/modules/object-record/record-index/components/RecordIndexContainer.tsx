@@ -30,11 +30,11 @@ import { recordIndexKanbanAggregateOperationState } from '@/object-record/record
 import { recordIndexViewFilterGroupsState } from '@/object-record/record-index/states/recordIndexViewFilterGroupsState';
 import { useSetRecoilComponentStateV2 } from '@/ui/utilities/state/component-state/hooks/useSetRecoilComponentStateV2';
 import { ViewBar } from '@/views/components/ViewBar';
+import { useMapViewFiltersToFilters } from '@/views/hooks/useMapViewFiltersToFilters';
 import { ViewField } from '@/views/types/ViewField';
 import { ViewGroup } from '@/views/types/ViewGroup';
 import { ViewType } from '@/views/types/ViewType';
 import { mapViewFieldsToColumnDefinitions } from '@/views/utils/mapViewFieldsToColumnDefinitions';
-import { mapViewFiltersToFilters } from '@/views/utils/mapViewFiltersToFilters';
 import { mapViewGroupsToRecordGroupDefinitions } from '@/views/utils/mapViewGroupsToRecordGroupDefinitions';
 import { mapViewSortsToSorts } from '@/views/utils/mapViewSortsToSorts';
 import { useCallback, useContext } from 'react';
@@ -95,6 +95,8 @@ export const RecordIndexContainer = () => {
   } = useRecordTable({
     recordTableId: recordIndexId,
   });
+
+  const { mapViewFiltersToFilters } = useMapViewFiltersToFilters();
 
   const onViewFieldsChange = useRecoilCallback(
     ({ set, snapshot }) =>

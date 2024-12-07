@@ -6,6 +6,7 @@ import { getInitialFilterValue } from '@/object-record/object-filter-dropdown/ut
 import { DropdownMenuItemsContainer } from '@/ui/layout/dropdown/components/DropdownMenuItemsContainer';
 import { useDropdown } from '@/ui/layout/dropdown/hooks/useDropdown';
 import { ViewFilterOperand } from '@/views/types/ViewFilterOperand';
+import { useResolveFilterValue } from '@/views/view-filter-value/utils/useResolveFilterValue';
 import styled from '@emotion/styled';
 import { MenuItem } from 'twenty-ui';
 import { isDefined } from '~/utils/isDefined';
@@ -33,6 +34,8 @@ export const ObjectFilterDropdownOperandSelect = () => {
 
   const selectedFilter = useRecoilValue(selectedFilterState);
 
+  const { resolveFilterValue } = useResolveFilterValue();
+
   const operandsForFilterType = isDefined(filterDefinitionUsedInDropdown)
     ? getOperandsForFilterDefinition(filterDefinitionUsedInDropdown)
     : [];
@@ -54,7 +57,11 @@ export const ObjectFilterDropdownOperandSelect = () => {
         fieldMetadataId: filterDefinitionUsedInDropdown?.fieldMetadataId ?? '',
         displayValue: '',
         operand: newOperand,
-        value: '',
+        value: resolveFilterValue(
+          filterDefinitionUsedInDropdown.type,
+          '',
+          newOperand,
+        ),
         definition: filterDefinitionUsedInDropdown,
       });
       return;

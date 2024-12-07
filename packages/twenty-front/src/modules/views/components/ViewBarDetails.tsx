@@ -18,7 +18,7 @@ import { availableFilterDefinitionsComponentState } from '@/views/states/availab
 import { availableSortDefinitionsComponentState } from '@/views/states/availableSortDefinitionsComponentState';
 import { isViewBarExpandedComponentState } from '@/views/states/isViewBarExpandedComponentState';
 import { canPersistViewComponentFamilySelector } from '@/views/states/selectors/canPersistViewComponentFamilySelector';
-import { mapViewFiltersToFilters } from '@/views/utils/mapViewFiltersToFilters';
+import { useMapViewFiltersToFilters } from '@/views/hooks/useMapViewFiltersToFilters';
 import { mapViewSortsToSorts } from '@/views/utils/mapViewSortsToSorts';
 import { isDefined } from 'twenty-ui';
 import { VariantFilterChip } from './VariantFilterChip';
@@ -116,6 +116,8 @@ export const ViewBarDetails = ({
     canPersistViewComponentFamilySelector,
     { viewId },
   );
+
+  const { mapViewFiltersToFilters } = useMapViewFiltersToFilters();
 
   const availableFilterDefinitions = useRecoilComponentValueV2(
     availableFilterDefinitionsComponentState,
