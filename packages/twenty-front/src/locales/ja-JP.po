@@ -8,8 +8,8 @@ msgstr ""
 "Language: ja\n"
 "Project-Id-Version: cf448e737e0d6d7b78742f963d761c61\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-01 00:00
-"
+"PO-Revision-Date: 2025-01-01 00:00\n"
+": \n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -85,6 +85,8 @@ msgstr "アカウント削除"
 msgid "Accounts"
 msgstr "アカウント"
 
+#: src/pages/settings/roles/components/RolePermissionsSettingsTableHeader.tsx:47
+#: src/pages/settings/roles/components/RolePermissionsObjectsTableHeader.tsx:39
 #: src/pages/settings/roles/components/RoleAssignmentTableHeader.tsx:22
 msgid "Actions"
 msgstr ""
@@ -104,7 +106,7 @@ msgstr "ワークフローを有効化"
 msgid "Active"
 msgstr "アクティブ"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:71
+#: src/pages/settings/developers/SettingsDevelopers.tsx:51
 msgid "Active API keys created by you or your team."
 msgstr "あなたまたはチームが作成したアクティブなAPIキー。"
 
@@ -150,7 +152,7 @@ msgstr "最初の{objectLabel}を追加"
 msgid "Added {beautifiedCreatedAt}"
 msgstr "{beautifiedCreatedAt}に追加"
 
-#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:132
+#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:143
 msgid "Advanced filter"
 msgstr "\\\\u9ad8\\\\u5ea6\\\\u306a\\\\u30d5\\\\u30a3\\\\u30eb\\\\u30bf\\\\u30fc"
 
@@ -190,7 +192,7 @@ msgstr "ユーザーがメールとパスワードでサインインできるよ
 msgid "An error occurred while updating password"
 msgstr "パスワードの更新中にエラーが発生しました"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:151
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:158
 msgid "An optional description"
 msgstr "任意の説明"
 
@@ -208,7 +210,7 @@ msgstr "API & Webhooks"
 msgid "API Key"
 msgstr "APIキー"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:70
+#: src/pages/settings/developers/SettingsDevelopers.tsx:50
 msgid "API keys"
 msgstr "APIキー"
 
@@ -253,11 +255,11 @@ msgstr ""
 msgid "Assign roles to specify each member's access permissions"
 msgstr "各メンバーのアクセス権限を指定するロールを割り当てる"
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:199
+#: src/pages/settings/roles/components/RoleAssignment.tsx:200
 msgid "Assign to member"
 msgstr ""
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:161
+#: src/pages/settings/roles/components/RoleAssignment.tsx:167
 msgid "Assigned members"
 msgstr "割り当てられたメンバー"
 
@@ -367,7 +369,7 @@ msgstr "中国語（簡体字）"
 msgid "Chinese — Traditional"
 msgstr "中国語（繁体字）"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:180
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:187
 msgid "Choose an object"
 msgstr "オブジェクトを選択"
 
@@ -488,7 +490,7 @@ msgstr "一意の値をカウント"
 msgid "Create a workflow and return here to view its versions"
 msgstr "ワークフローを作成し、ここに戻ってそのバージョンを表示"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:77
+#: src/pages/settings/developers/SettingsDevelopers.tsx:57
 msgid "Create API key"
 msgstr "APIキーを作成"
 
@@ -505,13 +507,17 @@ msgstr "プロフィールの作成"
 msgid "Create Role"
 msgstr "ロールの作成"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:93
+#: src/pages/settings/developers/SettingsDevelopers.tsx:73
 msgid "Create Webhook"
 msgstr "Webhookを作成"
 
 #: src/pages/onboarding/CreateWorkspace.tsx:113
 msgid "Create your workspace"
 msgstr "ワークスペースの作成"
+
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:36
+msgid "Custom Domain"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx:90
 msgid "Custom objects"
@@ -529,7 +535,11 @@ msgstr "ドメインをカスタマイズ"
 msgid "Customize your workspace security"
 msgstr "ワークスペースのセキュリティをカスタマイズ"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:239
+#: src/pages/settings/profile/appearance/components/LocalePicker.tsx:89
+msgid "Czech"
+msgstr ""
+
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:246
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:235
 #: src/pages/settings/data-model/SettingsObjectFieldEdit.tsx:250
 #: src/modules/settings/profile/components/DeleteWorkspace.tsx:30
@@ -595,7 +605,7 @@ msgstr "ワークフローを無効化"
 msgid "Define the name and description of your object"
 msgstr "オブジェクトの名前と説明を定義"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:245
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:252
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:241
 #: src/modules/action-menu/components/__stories__/RightDrawerActionMenuDropdown.stories.tsx:88
 #: src/modules/action-menu/components/__stories__/RecordIndexActionMenuDropdown.stories.tsx:59
@@ -634,13 +644,13 @@ msgstr "レコードを削除"
 msgid "Delete records"
 msgstr "レコードを削除"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:240
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:247
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:236
 msgid "Delete this integration"
 msgstr "この統合を削除"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:254
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:262
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:261
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:269
 msgid "Delete webhook"
 msgstr "Webhookを削除"
 
@@ -666,7 +676,7 @@ msgstr "ワークスペース全体を削除"
 msgid "Descending"
 msgstr "降順"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:150
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:157
 #: src/pages/settings/data-model/SettingsObjectFieldEdit.tsx:239
 #: src/pages/settings/data-model/SettingsObjectNewField/SettingsObjectNewFieldConfigure.tsx:266
 msgid "Description"
@@ -679,9 +689,9 @@ msgstr "説明"
 msgid "Destroy"
 msgstr "破棄"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:56
-#: src/pages/settings/developers/SettingsDevelopers.tsx:63
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:125
+#: src/pages/settings/developers/SettingsDevelopers.tsx:36
+#: src/pages/settings/developers/SettingsDevelopers.tsx:43
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:132
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeysNew.tsx:89
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:169
 #: src/modules/settings/components/SettingsNavigationDrawerItems.tsx:187
@@ -699,9 +709,8 @@ msgid "Display as relative date"
 msgstr "相対日付で表示"
 
 #: src/pages/settings/SettingsWorkspace.tsx:51
-#: src/pages/settings/workspace/SettingsDomain.tsx:185
-#: src/pages/settings/workspace/SettingsDomain.tsx:195
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#: src/pages/settings/workspace/SettingsDomain.tsx:186
+#: src/pages/settings/workspace/SettingsDomain.tsx:196
 msgid "Domain"
 msgstr "ドメイン"
 
@@ -771,7 +780,7 @@ msgstr "従業員"
 msgid "Empty"
 msgstr "空"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:134
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:141
 msgid "Endpoint URL"
 msgstr "エンドポイントURL"
 
@@ -799,7 +808,7 @@ msgstr "APIキーの再生成エラー：{err}"
 msgid "Error while switching subscription {to}."
 msgstr "サブスクリプション{to}の切り替え中にエラーが発生しました。"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:87
+#: src/pages/settings/developers/SettingsDevelopers.tsx:67
 msgid "Establish Webhook endpoints for notifications on asynchronous events."
 msgstr "非同期イベントの通知用にWebhookエンドポイントを設定する。"
 
@@ -900,7 +909,7 @@ msgstr "フィールド数"
 msgid "Filter"
 msgstr "フィルター"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:164
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:171
 msgid "Filters"
 msgstr "フィルター"
 
@@ -938,7 +947,7 @@ msgstr "機能"
 
 #: src/pages/settings/SettingsWorkspace.tsx:29
 #: src/pages/settings/SettingsWorkspace.tsx:35
-#: src/pages/settings/workspace/SettingsDomain.tsx:192
+#: src/pages/settings/workspace/SettingsDomain.tsx:193
 #: src/modules/settings/components/SettingsNavigationDrawerItems.tsx:143
 msgid "General"
 msgstr "一般"
@@ -1037,7 +1046,7 @@ msgstr "無効なメールアドレス"
 msgid "Invalid email or domain"
 msgstr "無効なメールアドレスまたはドメイン"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:166
+#: src/pages/settings/workspace/SettingsDomain.tsx:167
 msgid "Invalid form values"
 msgstr "無効なフォーム値"
 
@@ -1173,6 +1182,8 @@ msgstr "右に移動"
 #: src/pages/settings/SettingsWorkspace.tsx:44
 #: src/pages/settings/SettingsProfile.tsx:35
 #: src/pages/settings/roles/SettingsRoles.tsx:131
+#: src/pages/settings/roles/components/RolePermissionsSettingsTableHeader.tsx:45
+#: src/pages/settings/roles/components/RolePermissionsObjectsTableHeader.tsx:38
 #: src/pages/settings/roles/components/RoleAssignmentTableHeader.tsx:20
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeysNew.tsx:106
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:209
@@ -1275,19 +1286,27 @@ msgid "No connected account"
 msgstr "接続されたアカウントがありません"
 
 #: src/pages/settings/roles/components/RoleAssignment.tsx:187
-msgid "No members assigned to this role yet"
-msgstr ""
+#~ msgid "No members assigned to this role yet"
+#~ msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx:56
-msgid "No members matching this search"
-msgstr ""
+#~ msgid "No members matching this search"
+#~ msgstr ""
 
 #: src/pages/settings/roles/components/RoleAssignment.tsx:186
-msgid "No members matching your search"
-msgstr ""
+#~ msgid "No members matching your search"
+#~ msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx:57
-msgid "No more members to add"
+#~ msgid "No more members to add"
+#~ msgstr ""
+
+#: src/pages/settings/roles/components/RoleAssignment.tsx:208
+msgid "No more members to assign"
+msgstr ""
+
+#: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx:23
+msgid "No Result"
 msgstr ""
 
 #: src/modules/object-record/record-table/empty-state/utils/getEmptyStateTitle.ts:13
@@ -1384,7 +1403,6 @@ msgid "Permanently destroy workflows"
 msgstr "ワークフローを永久に破壊する"
 
 #: src/pages/settings/roles/SettingsRoleEdit.tsx:80
-#: src/pages/settings/roles/components/RolePermissions.tsx:14
 msgid "Permissions"
 msgstr "権限"
 
@@ -1393,7 +1411,7 @@ msgstr "権限"
 msgid "Picture"
 msgstr "写真"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:143
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:150
 msgid "Please enter a valid URL"
 msgstr "有効なURLを入力してください"
 
@@ -1401,7 +1419,7 @@ msgstr "有効なURLを入力してください"
 msgid "Please type \"{confirmationValue}\" to confirm you want to delete this API Key. Be aware that any script using this key will stop working."
 msgstr "\"{confirmationValue}\"と入力して、このAPIキーを削除することを確認してください。このキーを使用しているスクリプトは動作しなくなりますのでご注意ください。"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:256
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:263
 msgid "Please type {confirmationText} to confirm you want to delete this webhook."
 msgstr "{confirmationText}と入力して、このWebhookを削除することを確認してください。"
 
@@ -1549,7 +1567,7 @@ msgstr "''{commandMenuSearch}''で検索..."
 msgid "Search a field..."
 msgstr "フィールドを検索..."
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:168
+#: src/pages/settings/roles/components/RoleAssignment.tsx:174
 msgid "Search a member"
 msgstr ""
 
@@ -1598,7 +1616,7 @@ msgstr "バージョンを見る"
 msgid "See versions history"
 msgstr "バージョン履歴を見る"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:165
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:172
 msgid "Select the events you wish to send to this endpoint"
 msgstr "このエンドポイントに送信したいイベントを選択してください"
 
@@ -1627,16 +1645,21 @@ msgstr "サーバー管理パネル"
 msgid "Set email visibility, manage your blocklist and more."
 msgstr "メールの可視性を設定し、ブロックリストを管理するなど。"
 
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
-msgid "Set the name of your domain"
-msgstr "ドメイン名を設定"
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:37
+msgid "Set the name of your custom domain and configure your DNS records."
+msgstr ""
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:37
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#~ msgid "Set the name of your domain"
+#~ msgstr "ドメイン名を設定"
+
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:40
 msgid "Set the name of your subdomain"
 msgstr "サブドメイン名を設定"
 
 #: src/pages/settings/roles/SettingsRoleEdit.tsx:86
-#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx:102
+#: src/pages/settings/roles/components/RolePermissions.tsx:113
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx:103
 #: src/modules/sign-in-background-mock/components/SignInAppNavigationDrawerMock.tsx:50
 #: src/modules/settings/accounts/components/SettingsAccountsSettingsSection.tsx:33
 #: src/modules/navigation/components/MainNavigationDrawerItems.tsx:57
@@ -1688,12 +1711,12 @@ msgstr "スペイン語"
 msgid "SSO"
 msgstr "SSO"
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:36
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:39
 msgid "Subdomain"
 msgstr "サブドメイン"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:111
-#: src/pages/settings/workspace/SettingsDomain.tsx:138
+#: src/pages/settings/workspace/SettingsDomain.tsx:112
+#: src/pages/settings/workspace/SettingsDomain.tsx:139
 msgid "Subdomain already taken"
 msgstr "サブドメインは既に使用されています"
 
@@ -1826,7 +1849,7 @@ msgstr ""
 #~ msgid "This Role is assigned to these workspace member."
 #~ msgstr "このロールは、これらのワークスペースメンバーに割り当てられています。"
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:162
+#: src/pages/settings/roles/components/RoleAssignment.tsx:168
 msgid "This role is assigned to these workspace members."
 msgstr ""
 
@@ -1885,7 +1908,7 @@ msgstr "連絡先無制限"
 msgid "Upload"
 msgstr "アップロード"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:138
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:145
 msgid "URL"
 msgstr "URL"
 
@@ -1938,15 +1961,15 @@ msgstr "可視化"
 msgid "We support your square PNGs, JPEGs and GIFs under 10MB"
 msgstr "10MB以下の正方形のPNG、JPEG、GIFに対応しています"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:135
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:142
 msgid "We will send POST requests to this endpoint for every new event"
 msgstr "新しいイベントごとに、このエンドポイントにPOSTリクエストを送信します"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:128
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:135
 msgid "Webhook"
 msgstr "Webhook"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:86
+#: src/pages/settings/developers/SettingsDevelopers.tsx:66
 msgid "Webhooks"
 msgstr "Webhooks"
 
@@ -1974,12 +1997,12 @@ msgstr "ワークフローをテストできません"
 #: src/pages/settings/SettingsWorkspace.tsx:32
 #: src/pages/settings/SettingsBilling.tsx:135
 #: src/pages/settings/Releases.tsx:114
-#: src/pages/settings/workspace/SettingsDomain.tsx:188
+#: src/pages/settings/workspace/SettingsDomain.tsx:189
 #: src/pages/settings/security/SettingsSecurity.tsx:37
 #: src/pages/settings/roles/SettingsRoles.tsx:115
 #: src/pages/settings/integrations/SettingsIntegrations.tsx:18
-#: src/pages/settings/developers/SettingsDevelopers.tsx:60
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:121
+#: src/pages/settings/developers/SettingsDevelopers.tsx:40
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:128
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeysNew.tsx:85
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:165
 #: src/pages/settings/data-model/SettingsObjects.tsx:152
@@ -2006,11 +2029,12 @@ msgid "Workspace name"
 msgstr "ワークスペースの名前"
 
 #: src/pages/settings/roles/components/RoleSettings.tsx:40
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:154
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:161
+#: src/modules/settings/data-model/objects/forms/components/SettingsDataModelObjectAboutForm.tsx:220
 msgid "Write a description"
 msgstr "説明を記入"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:113
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:120
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:156
 msgid "yes"
 msgstr "はい"

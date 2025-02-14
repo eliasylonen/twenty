@@ -8,8 +8,8 @@ msgstr ""
 "Language: el\n"
 "Project-Id-Version: cf448e737e0d6d7b78742f963d761c61\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-01 00:00
-"
+"PO-Revision-Date: 2025-01-01 00:00\n"
+": \n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -152,7 +152,7 @@ msgstr "Προσθέστε το πρώτο σας {objectLabel}"
 msgid "Added {beautifiedCreatedAt}"
 msgstr "Προστέθηκε {beautifiedCreatedAt}"
 
-#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:132
+#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:143
 msgid "Advanced filter"
 msgstr "Προηγμένο φίλτρο"
 
@@ -515,6 +515,10 @@ msgstr "Δημιουργήστε Webhook"
 msgid "Create your workspace"
 msgstr "Δημιουργήστε το χώρο εργασίας σας"
 
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:36
+msgid "Custom Domain"
+msgstr ""
+
 #: src/pages/onboarding/ChooseYourPlan.tsx:90
 msgid "Custom objects"
 msgstr "Προσαρμοσμένα αντικείμενα"
@@ -705,9 +709,8 @@ msgid "Display as relative date"
 msgstr "Εμφάνιση σε σχετική ημερομηνία"
 
 #: src/pages/settings/SettingsWorkspace.tsx:51
-#: src/pages/settings/workspace/SettingsDomain.tsx:185
-#: src/pages/settings/workspace/SettingsDomain.tsx:195
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#: src/pages/settings/workspace/SettingsDomain.tsx:186
+#: src/pages/settings/workspace/SettingsDomain.tsx:196
 msgid "Domain"
 msgstr "Τομέας"
 
@@ -791,7 +794,8 @@ msgstr "Απολαύστε μια δωρεάν δοκιμαστική περίο
 
 #: src/pages/settings/security/SettingsSecurity.tsx:51
 msgid "Enterprise"
-msgstr "\n"
+msgstr ""
+"\n"
 "        {\"Enterprise\": \"{0, plural, one {Επιχείρηση} other {Επιχειρήσεις}}\",\n"
 "        \"broken_translation\": \"Επιχειρήσεις\",\n"
 "        \"qa_issues\": [\"Translation is the same as the source text\"],\n"
@@ -951,7 +955,7 @@ msgstr "Λειτουργίες"
 
 #: src/pages/settings/SettingsWorkspace.tsx:29
 #: src/pages/settings/SettingsWorkspace.tsx:35
-#: src/pages/settings/workspace/SettingsDomain.tsx:192
+#: src/pages/settings/workspace/SettingsDomain.tsx:193
 #: src/modules/settings/components/SettingsNavigationDrawerItems.tsx:143
 msgid "General"
 msgstr "Γενικά"
@@ -1050,7 +1054,7 @@ msgstr "Μη έγκυρο email"
 msgid "Invalid email or domain"
 msgstr "Μη έγκυρο email ή domain"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:166
+#: src/pages/settings/workspace/SettingsDomain.tsx:167
 msgid "Invalid form values"
 msgstr "Μη έγκυρες τιμές φόρμας"
 
@@ -1649,11 +1653,15 @@ msgstr "Διαχειριστής Πίνακας Διακομιστή"
 msgid "Set email visibility, manage your blocklist and more."
 msgstr "Ρυθμίστε την ορατότητα του email, διαχειριστείτε τη λίστα αποκλεισμού σας και άλλα."
 
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
-msgid "Set the name of your domain"
-msgstr "Ορίστε το όνομα του τομέα σας"
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:37
+msgid "Set the name of your custom domain and configure your DNS records."
+msgstr ""
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:37
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#~ msgid "Set the name of your domain"
+#~ msgstr "Ορίστε το όνομα του τομέα σας"
+
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:40
 msgid "Set the name of your subdomain"
 msgstr "Ορίστε το όνομα του υποτομέα σας"
 
@@ -1711,12 +1719,12 @@ msgstr "Ισπανικά"
 msgid "SSO"
 msgstr "Ενιαίο Σύστημα Εισόδου"
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:36
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:39
 msgid "Subdomain"
 msgstr "Υποτομέας"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:111
-#: src/pages/settings/workspace/SettingsDomain.tsx:138
+#: src/pages/settings/workspace/SettingsDomain.tsx:112
+#: src/pages/settings/workspace/SettingsDomain.tsx:139
 msgid "Subdomain already taken"
 msgstr "Ο υποτομέας έχει ήδη ληφθεί"
 
@@ -1997,7 +2005,7 @@ msgstr "Το Workflow δεν μπορεί να δοκιμαστεί"
 #: src/pages/settings/SettingsWorkspace.tsx:32
 #: src/pages/settings/SettingsBilling.tsx:135
 #: src/pages/settings/Releases.tsx:114
-#: src/pages/settings/workspace/SettingsDomain.tsx:188
+#: src/pages/settings/workspace/SettingsDomain.tsx:189
 #: src/pages/settings/security/SettingsSecurity.tsx:37
 #: src/pages/settings/roles/SettingsRoles.tsx:115
 #: src/pages/settings/integrations/SettingsIntegrations.tsx:18
@@ -2062,4 +2070,3 @@ msgstr "Ο χώρος εργασίας σας"
 #: src/pages/settings/SettingsBilling.tsx:172
 msgid "Your workspace will be disabled"
 msgstr "Ο χώρος εργασίας σας θα απενεργοποιηθεί"
-

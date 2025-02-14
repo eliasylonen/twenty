@@ -8,8 +8,8 @@ msgstr ""
 "Language: hu\n"
 "Project-Id-Version: cf448e737e0d6d7b78742f963d761c61\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-01 00:00
-"
+"PO-Revision-Date: 2025-01-01 00:00\n"
+": \n"
 "Last-Translator: \n"
 "Language-Team: Hungarian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -152,7 +152,7 @@ msgstr "Add meg az első {objectLabel} előfordulást"
 msgid "Added {beautifiedCreatedAt}"
 msgstr "Hozzáadva {beautifiedCreatedAt}"
 
-#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:132
+#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:143
 msgid "Advanced filter"
 msgstr "Speciális szűrő"
 
@@ -515,6 +515,10 @@ msgstr "Webhook létrehozása"
 msgid "Create your workspace"
 msgstr "Hozza létre munkaterületét"
 
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:36
+msgid "Custom Domain"
+msgstr ""
+
 #: src/pages/onboarding/ChooseYourPlan.tsx:90
 msgid "Custom objects"
 msgstr "Egyéni objektumok"
@@ -705,9 +709,8 @@ msgid "Display as relative date"
 msgstr "Megjelen\\u00edt\\u00e9s relat\\u00edv d\\u00e1tumk\\u00e9nt"
 
 #: src/pages/settings/SettingsWorkspace.tsx:51
-#: src/pages/settings/workspace/SettingsDomain.tsx:185
-#: src/pages/settings/workspace/SettingsDomain.tsx:195
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#: src/pages/settings/workspace/SettingsDomain.tsx:186
+#: src/pages/settings/workspace/SettingsDomain.tsx:196
 msgid "Domain"
 msgstr "Domain"
 
@@ -944,7 +947,7 @@ msgstr "Funkciók"
 
 #: src/pages/settings/SettingsWorkspace.tsx:29
 #: src/pages/settings/SettingsWorkspace.tsx:35
-#: src/pages/settings/workspace/SettingsDomain.tsx:192
+#: src/pages/settings/workspace/SettingsDomain.tsx:193
 #: src/modules/settings/components/SettingsNavigationDrawerItems.tsx:143
 msgid "General"
 msgstr "Általános"
@@ -1043,7 +1046,7 @@ msgstr "Érvénytelen email"
 msgid "Invalid email or domain"
 msgstr "Érvénytelen email vagy domain"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:166
+#: src/pages/settings/workspace/SettingsDomain.tsx:167
 msgid "Invalid form values"
 msgstr "Érvénytelen űrlap értékek"
 
@@ -1642,11 +1645,15 @@ msgstr "Szerver Adminisztrációs Panel"
 msgid "Set email visibility, manage your blocklist and more."
 msgstr "Beállíthatja az e-mail láthatóságát, kezelheti a tiltólistáját és egyebeket."
 
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
-msgid "Set the name of your domain"
-msgstr "Adja meg a tartománynevet"
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:37
+msgid "Set the name of your custom domain and configure your DNS records."
+msgstr ""
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:37
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#~ msgid "Set the name of your domain"
+#~ msgstr "Adja meg a tartománynevet"
+
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:40
 msgid "Set the name of your subdomain"
 msgstr "Adja meg az aldomain nevét"
 
@@ -1704,12 +1711,12 @@ msgstr "Spanyol"
 msgid "SSO"
 msgstr "SSO"
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:36
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:39
 msgid "Subdomain"
 msgstr "Aldomén"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:111
-#: src/pages/settings/workspace/SettingsDomain.tsx:138
+#: src/pages/settings/workspace/SettingsDomain.tsx:112
+#: src/pages/settings/workspace/SettingsDomain.tsx:139
 msgid "Subdomain already taken"
 msgstr "Az aldomén már foglalt"
 
@@ -1990,7 +1997,7 @@ msgstr "A folyamatot nem lehet tesztelni"
 #: src/pages/settings/SettingsWorkspace.tsx:32
 #: src/pages/settings/SettingsBilling.tsx:135
 #: src/pages/settings/Releases.tsx:114
-#: src/pages/settings/workspace/SettingsDomain.tsx:188
+#: src/pages/settings/workspace/SettingsDomain.tsx:189
 #: src/pages/settings/security/SettingsSecurity.tsx:37
 #: src/pages/settings/roles/SettingsRoles.tsx:115
 #: src/pages/settings/integrations/SettingsIntegrations.tsx:18
@@ -2055,4 +2062,3 @@ msgstr "Az Ön munkaterülete"
 #: src/pages/settings/SettingsBilling.tsx:172
 msgid "Your workspace will be disabled"
 msgstr "A munkaterületét le lesz tiltva"
-

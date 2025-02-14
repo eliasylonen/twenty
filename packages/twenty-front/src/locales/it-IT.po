@@ -8,8 +8,8 @@ msgstr ""
 "Language: it\n"
 "Project-Id-Version: cf448e737e0d6d7b78742f963d761c61\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-01 00:00
-"
+"PO-Revision-Date: 2025-01-01 00:00\n"
+": \n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -85,6 +85,8 @@ msgstr "Eliminazione account"
 msgid "Accounts"
 msgstr "Account"
 
+#: src/pages/settings/roles/components/RolePermissionsSettingsTableHeader.tsx:47
+#: src/pages/settings/roles/components/RolePermissionsObjectsTableHeader.tsx:39
 #: src/pages/settings/roles/components/RoleAssignmentTableHeader.tsx:22
 msgid "Actions"
 msgstr ""
@@ -104,7 +106,7 @@ msgstr "Attiva workflow"
 msgid "Active"
 msgstr "Attivo"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:71
+#: src/pages/settings/developers/SettingsDevelopers.tsx:51
 msgid "Active API keys created by you or your team."
 msgstr "Chiavi API attive create da te o dal tuo team."
 
@@ -150,7 +152,7 @@ msgstr "Aggiungi il tuo primo {objectLabel}"
 msgid "Added {beautifiedCreatedAt}"
 msgstr "Aggiunto {beautifiedCreatedAt}"
 
-#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:132
+#: src/modules/object-record/object-filter-dropdown/components/AdvancedFilterButton.tsx:143
 msgid "Advanced filter"
 msgstr "Filtro avanzato"
 
@@ -190,7 +192,7 @@ msgstr "Consenti agli utenti di accedere con e-mail e password."
 msgid "An error occurred while updating password"
 msgstr "Si è verificato un errore durante l'aggiornamento della password"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:151
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:158
 msgid "An optional description"
 msgstr "Descrizione opzionale"
 
@@ -208,7 +210,7 @@ msgstr "API e Webhook"
 msgid "API Key"
 msgstr "Chiave API"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:70
+#: src/pages/settings/developers/SettingsDevelopers.tsx:50
 msgid "API keys"
 msgstr "Chiavi API"
 
@@ -253,11 +255,11 @@ msgstr ""
 msgid "Assign roles to specify each member's access permissions"
 msgstr "Assegna ruoli per specificare le autorizzazioni di accesso di ogni membro"
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:199
+#: src/pages/settings/roles/components/RoleAssignment.tsx:200
 msgid "Assign to member"
 msgstr ""
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:161
+#: src/pages/settings/roles/components/RoleAssignment.tsx:167
 msgid "Assigned members"
 msgstr "Membri assegnati"
 
@@ -367,7 +369,7 @@ msgstr "Cinese semplificato"
 msgid "Chinese — Traditional"
 msgstr "Cinese tradizionale"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:180
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:187
 msgid "Choose an object"
 msgstr "Scegli un oggetto"
 
@@ -488,7 +490,7 @@ msgstr "Conta valori unici"
 msgid "Create a workflow and return here to view its versions"
 msgstr "Crea un workflow e torna qui per visualizzarne le versioni"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:77
+#: src/pages/settings/developers/SettingsDevelopers.tsx:57
 msgid "Create API key"
 msgstr "Crea chiave API"
 
@@ -505,13 +507,17 @@ msgstr "Crea profilo"
 msgid "Create Role"
 msgstr "Crea Ruolo"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:93
+#: src/pages/settings/developers/SettingsDevelopers.tsx:73
 msgid "Create Webhook"
 msgstr "Crea webhook"
 
 #: src/pages/onboarding/CreateWorkspace.tsx:113
 msgid "Create your workspace"
 msgstr "Crea il tuo spazio di lavoro"
+
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:36
+msgid "Custom Domain"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx:90
 msgid "Custom objects"
@@ -529,7 +535,11 @@ msgstr "Personalizza dominio"
 msgid "Customize your workspace security"
 msgstr "Personalizza la sicurezza del tuo workspace"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:239
+#: src/pages/settings/profile/appearance/components/LocalePicker.tsx:89
+msgid "Czech"
+msgstr ""
+
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:246
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:235
 #: src/pages/settings/data-model/SettingsObjectFieldEdit.tsx:250
 #: src/modules/settings/profile/components/DeleteWorkspace.tsx:30
@@ -595,7 +605,7 @@ msgstr "Disattiva workflow"
 msgid "Define the name and description of your object"
 msgstr "Definisci il nome e la descrizione dell'oggetto"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:245
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:252
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:241
 #: src/modules/action-menu/components/__stories__/RightDrawerActionMenuDropdown.stories.tsx:88
 #: src/modules/action-menu/components/__stories__/RecordIndexActionMenuDropdown.stories.tsx:59
@@ -634,13 +644,13 @@ msgstr "Elimina record"
 msgid "Delete records"
 msgstr "Elimina record"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:240
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:247
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:236
 msgid "Delete this integration"
 msgstr "Elimina questa integrazione"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:254
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:262
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:261
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:269
 msgid "Delete webhook"
 msgstr "Elimina webhook"
 
@@ -666,7 +676,7 @@ msgstr "Elimina l'intero workspace"
 msgid "Descending"
 msgstr "Discendente"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:150
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:157
 #: src/pages/settings/data-model/SettingsObjectFieldEdit.tsx:239
 #: src/pages/settings/data-model/SettingsObjectNewField/SettingsObjectNewFieldConfigure.tsx:266
 msgid "Description"
@@ -679,9 +689,9 @@ msgstr "Descrizione"
 msgid "Destroy"
 msgstr "Distruggi"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:56
-#: src/pages/settings/developers/SettingsDevelopers.tsx:63
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:125
+#: src/pages/settings/developers/SettingsDevelopers.tsx:36
+#: src/pages/settings/developers/SettingsDevelopers.tsx:43
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:132
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeysNew.tsx:89
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:169
 #: src/modules/settings/components/SettingsNavigationDrawerItems.tsx:187
@@ -699,9 +709,8 @@ msgid "Display as relative date"
 msgstr "Visualizza come data relativa"
 
 #: src/pages/settings/SettingsWorkspace.tsx:51
-#: src/pages/settings/workspace/SettingsDomain.tsx:185
-#: src/pages/settings/workspace/SettingsDomain.tsx:195
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#: src/pages/settings/workspace/SettingsDomain.tsx:186
+#: src/pages/settings/workspace/SettingsDomain.tsx:196
 msgid "Domain"
 msgstr "Dominio"
 
@@ -771,7 +780,7 @@ msgstr "Dipendenti"
 msgid "Empty"
 msgstr "Vuoto"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:134
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:141
 msgid "Endpoint URL"
 msgstr "URL endpoint"
 
@@ -799,7 +808,7 @@ msgstr "Errore nella rigenerazione della chiave API: {err}"
 msgid "Error while switching subscription {to}."
 msgstr "Errore durante il cambio di abbonamento {to}."
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:87
+#: src/pages/settings/developers/SettingsDevelopers.tsx:67
 msgid "Establish Webhook endpoints for notifications on asynchronous events."
 msgstr "Stabilisci endpoint Webhook per le notifiche di eventi asincroni."
 
@@ -900,7 +909,7 @@ msgstr "Conteggio campi"
 msgid "Filter"
 msgstr "Filtro"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:164
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:171
 msgid "Filters"
 msgstr "Filtri"
 
@@ -938,7 +947,7 @@ msgstr "Funzioni"
 
 #: src/pages/settings/SettingsWorkspace.tsx:29
 #: src/pages/settings/SettingsWorkspace.tsx:35
-#: src/pages/settings/workspace/SettingsDomain.tsx:192
+#: src/pages/settings/workspace/SettingsDomain.tsx:193
 #: src/modules/settings/components/SettingsNavigationDrawerItems.tsx:143
 msgid "General"
 msgstr "Generale"
@@ -1037,7 +1046,7 @@ msgstr "Email non valida"
 msgid "Invalid email or domain"
 msgstr "Email o dominio non valido"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:166
+#: src/pages/settings/workspace/SettingsDomain.tsx:167
 msgid "Invalid form values"
 msgstr "Valori del modulo non validi"
 
@@ -1173,6 +1182,8 @@ msgstr "Sposta a destra"
 #: src/pages/settings/SettingsWorkspace.tsx:44
 #: src/pages/settings/SettingsProfile.tsx:35
 #: src/pages/settings/roles/SettingsRoles.tsx:131
+#: src/pages/settings/roles/components/RolePermissionsSettingsTableHeader.tsx:45
+#: src/pages/settings/roles/components/RolePermissionsObjectsTableHeader.tsx:38
 #: src/pages/settings/roles/components/RoleAssignmentTableHeader.tsx:20
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeysNew.tsx:106
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:209
@@ -1275,19 +1286,27 @@ msgid "No connected account"
 msgstr "Nessun account collegato"
 
 #: src/pages/settings/roles/components/RoleAssignment.tsx:187
-msgid "No members assigned to this role yet"
-msgstr ""
+#~ msgid "No members assigned to this role yet"
+#~ msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx:56
-msgid "No members matching this search"
-msgstr ""
+#~ msgid "No members matching this search"
+#~ msgstr ""
 
 #: src/pages/settings/roles/components/RoleAssignment.tsx:186
-msgid "No members matching your search"
-msgstr ""
+#~ msgid "No members matching your search"
+#~ msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx:57
-msgid "No more members to add"
+#~ msgid "No more members to add"
+#~ msgstr ""
+
+#: src/pages/settings/roles/components/RoleAssignment.tsx:208
+msgid "No more members to assign"
+msgstr ""
+
+#: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx:23
+msgid "No Result"
 msgstr ""
 
 #: src/modules/object-record/record-table/empty-state/utils/getEmptyStateTitle.ts:13
@@ -1384,7 +1403,6 @@ msgid "Permanently destroy workflows"
 msgstr "Distruggi definitivamente i workflow"
 
 #: src/pages/settings/roles/SettingsRoleEdit.tsx:80
-#: src/pages/settings/roles/components/RolePermissions.tsx:14
 msgid "Permissions"
 msgstr "Permessi"
 
@@ -1393,7 +1411,7 @@ msgstr "Permessi"
 msgid "Picture"
 msgstr "Immagine"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:143
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:150
 msgid "Please enter a valid URL"
 msgstr "Inserisci un URL valido"
 
@@ -1401,7 +1419,7 @@ msgstr "Inserisci un URL valido"
 msgid "Please type \"{confirmationValue}\" to confirm you want to delete this API Key. Be aware that any script using this key will stop working."
 msgstr "Digita \"{confirmationValue}\" per confermare che vuoi eliminare questa chiave API. Tieni presente che qualsiasi script che utilizza questa chiave smetterà di funzionare."
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:256
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:263
 msgid "Please type {confirmationText} to confirm you want to delete this webhook."
 msgstr "Digita {confirmationText} per confermare che vuoi eliminare questo webhook."
 
@@ -1549,7 +1567,7 @@ msgstr "Cerca ''{commandMenuSearch}'' con..."
 msgid "Search a field..."
 msgstr "Cerca un campo..."
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:168
+#: src/pages/settings/roles/components/RoleAssignment.tsx:174
 msgid "Search a member"
 msgstr ""
 
@@ -1598,7 +1616,7 @@ msgstr "Vedi versioni"
 msgid "See versions history"
 msgstr "Vedi cronologia versioni"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:165
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:172
 msgid "Select the events you wish to send to this endpoint"
 msgstr "Seleziona gli eventi da inviare a questo endpoint"
 
@@ -1627,16 +1645,21 @@ msgstr "Pannello di amministrazione del server"
 msgid "Set email visibility, manage your blocklist and more."
 msgstr "Imposta la visibilità dell'email, gestisci la tua blocklist e altro."
 
-#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
-msgid "Set the name of your domain"
-msgstr "Imposta il nome del dominio"
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:37
+msgid "Set the name of your custom domain and configure your DNS records."
+msgstr ""
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:37
+#: src/pages/settings/workspace/SettingsCustomDomain.tsx:25
+#~ msgid "Set the name of your domain"
+#~ msgstr "Imposta il nome del dominio"
+
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:40
 msgid "Set the name of your subdomain"
 msgstr "Imposta il nome del sottodominio"
 
 #: src/pages/settings/roles/SettingsRoleEdit.tsx:86
-#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx:102
+#: src/pages/settings/roles/components/RolePermissions.tsx:113
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx:103
 #: src/modules/sign-in-background-mock/components/SignInAppNavigationDrawerMock.tsx:50
 #: src/modules/settings/accounts/components/SettingsAccountsSettingsSection.tsx:33
 #: src/modules/navigation/components/MainNavigationDrawerItems.tsx:57
@@ -1688,12 +1711,12 @@ msgstr "Spagnolo"
 msgid "SSO"
 msgstr "SSO"
 
-#: src/pages/settings/workspace/SettingsSubdomain.tsx:36
+#: src/pages/settings/workspace/SettingsSubdomain.tsx:39
 msgid "Subdomain"
 msgstr "Sottodominio"
 
-#: src/pages/settings/workspace/SettingsDomain.tsx:111
-#: src/pages/settings/workspace/SettingsDomain.tsx:138
+#: src/pages/settings/workspace/SettingsDomain.tsx:112
+#: src/pages/settings/workspace/SettingsDomain.tsx:139
 msgid "Subdomain already taken"
 msgstr "Sottodominio già in uso"
 
@@ -1826,7 +1849,7 @@ msgstr ""
 #~ msgid "This Role is assigned to these workspace member."
 #~ msgstr "Questo Ruolo è assegnato a questi membri dello spazio di lavoro."
 
-#: src/pages/settings/roles/components/RoleAssignment.tsx:162
+#: src/pages/settings/roles/components/RoleAssignment.tsx:168
 msgid "This role is assigned to these workspace members."
 msgstr ""
 
@@ -1885,7 +1908,7 @@ msgstr "Contatti illimitati"
 msgid "Upload"
 msgstr "Carica"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:138
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:145
 msgid "URL"
 msgstr "URL"
 
@@ -1938,15 +1961,15 @@ msgstr "Visualizza"
 msgid "We support your square PNGs, JPEGs and GIFs under 10MB"
 msgstr "Supportiamo PNG, JPEG e GIF quadrati fino a 10MB"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:135
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:142
 msgid "We will send POST requests to this endpoint for every new event"
 msgstr "Invieremo richieste POST a questo endpoint per ogni nuovo evento"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:128
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:135
 msgid "Webhook"
 msgstr "Webhook"
 
-#: src/pages/settings/developers/SettingsDevelopers.tsx:86
+#: src/pages/settings/developers/SettingsDevelopers.tsx:66
 msgid "Webhooks"
 msgstr "Webhooks"
 
@@ -1974,12 +1997,12 @@ msgstr "Il workflow non può essere testato"
 #: src/pages/settings/SettingsWorkspace.tsx:32
 #: src/pages/settings/SettingsBilling.tsx:135
 #: src/pages/settings/Releases.tsx:114
-#: src/pages/settings/workspace/SettingsDomain.tsx:188
+#: src/pages/settings/workspace/SettingsDomain.tsx:189
 #: src/pages/settings/security/SettingsSecurity.tsx:37
 #: src/pages/settings/roles/SettingsRoles.tsx:115
 #: src/pages/settings/integrations/SettingsIntegrations.tsx:18
-#: src/pages/settings/developers/SettingsDevelopers.tsx:60
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:121
+#: src/pages/settings/developers/SettingsDevelopers.tsx:40
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:128
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeysNew.tsx:85
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:165
 #: src/pages/settings/data-model/SettingsObjects.tsx:152
@@ -2006,11 +2029,12 @@ msgid "Workspace name"
 msgstr "Nome dello spazio di lavoro"
 
 #: src/pages/settings/roles/components/RoleSettings.tsx:40
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:154
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:161
+#: src/modules/settings/data-model/objects/forms/components/SettingsDataModelObjectAboutForm.tsx:220
 msgid "Write a description"
 msgstr "Scrivi una descrizione"
 
-#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:113
+#: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhookDetail.tsx:120
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx:156
 msgid "yes"
 msgstr "sì"
