@@ -34,8 +34,6 @@ import { getEmptyRecordGqlOperationFilter } from '@/object-record/record-filter/
 
 import { resolveDateViewFilterValue } from '@/views/view-filter-value/utils/resolveDateViewFilterValue';
 import { resolveSelectViewFilterValue } from '@/views/view-filter-value/utils/resolveSelectViewFilterValue';
-import { jsonRelationFilterValueSchema } from '@/views/view-filter-value/validation-schemas/jsonRelationFilterValueSchema';
-import { simpleRelationFilterValueSchema } from '@/views/view-filter-value/validation-schemas/simpleRelationFilterValueSchema';
 import { endOfDay, roundToNearestMinutes, startOfDay } from 'date-fns';
 import { z } from 'zod';
 
@@ -43,6 +41,7 @@ import { RecordFilterGroup } from '@/object-record/record-filter-group/types/Rec
 import { RecordFilterGroupLogicalOperator } from '@/object-record/record-filter-group/types/RecordFilterGroupLogicalOperator';
 import { FilterableFieldType } from '@/object-record/record-filter/types/FilterableFieldType';
 import { isDefined } from 'twenty-shared/utils';
+import { relationFilterValueSchema } from '@/views/view-filter-value/validation-schemas/relationFilterValueSchema';
 
 type ComputeFilterRecordGqlOperationFilterParams = {
   filterValueDependencies: RecordFilterValueDependencies;
@@ -306,22 +305,13 @@ export const computeFilterRecordGqlOperationFilter = ({
           );
       }
     case 'RELATION': {
-      const { isCurrentWorkspaceMemberSelected, selectedRecordIds } =
-        jsonRelationFilterValueSchema
-          .catch({
-            isCurrentWorkspaceMemberSelected: false,
-            selectedRecordIds: simpleRelationFilterValueSchema.parse(
-              filter.value,
-            ),
-          })
-          .parse(filter.value);
+      const parsedFilterValue = relationFilterValueSchema.parse(filter.value);
 
-      const recordIds = isCurrentWorkspaceMemberSelected
-        ? [
-            ...selectedRecordIds,
-            filterValueDependencies.currentWorkspaceMemberId,
-          ]
-        : selectedRecordIds;
+      const recordIds = parsedFilterValue.map((item) =>
+        item === '{{CURRENT_WORKSPACE_MEMBER}}'
+          ? filterValueDependencies.currentWorkspaceMemberId
+          : item,
+      );
 
       if (recordIds.length === 0) return;
 

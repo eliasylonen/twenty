@@ -8,9 +8,8 @@ import { fieldMetadataItemUsedInDropdownComponentSelector } from '@/object-recor
 import { objectFilterDropdownSelectedOptionValuesComponentState } from '@/object-record/object-filter-dropdown/states/objectFilterDropdownSelectedOptionValuesComponentState';
 import { objectFilterDropdownSelectedRecordIdsComponentState } from '@/object-record/object-filter-dropdown/states/objectFilterDropdownSelectedRecordIdsComponentState';
 import { currentRecordFiltersComponentState } from '@/object-record/record-filter/states/currentRecordFiltersComponentState';
-import { jsonRelationFilterValueSchema } from '@/views/view-filter-value/validation-schemas/jsonRelationFilterValueSchema';
-import { simpleRelationFilterValueSchema } from '@/views/view-filter-value/validation-schemas/simpleRelationFilterValueSchema';
 import { isDefined } from 'twenty-shared/utils';
+import { relationFilterValueSchema } from '../view-filter-value/validation-schemas/relationFilterValueSchema';
 
 type ViewBarFilterEffectProps = {
   filterDropdownId: string;
@@ -46,14 +45,16 @@ export const ViewBarFilterEffect = ({
           filter.fieldMetadataId === fieldMetadataItemUsedInDropdown?.id,
       );
 
-      const { selectedRecordIds } = jsonRelationFilterValueSchema
-        .catch({
-          isCurrentWorkspaceMemberSelected: false,
-          selectedRecordIds: simpleRelationFilterValueSchema.parse(
-            recordFilterUsedInDropdown?.value,
-          ),
-        })
-        .parse(recordFilterUsedInDropdown?.value);
+      const parsedFilterValue = relationFilterValueSchema.parse(
+        recordFilterUsedInDropdown?.value,
+      );
+
+      const isVariableItem = (item: string) =>
+        item.startsWith('{{') && item.endsWith('}}');
+
+      const selectedRecordIds = parsedFilterValue.filter(
+        (item) => !isVariableItem(item),
+      );
 
       setObjectFilterDropdownSelectedRecordIds(selectedRecordIds);
     } else if (

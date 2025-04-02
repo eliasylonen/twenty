@@ -15,7 +15,6 @@ import { ObjectRecord } from '@/object-record/types/ObjectRecord';
 import { generateFindManyRecordsQuery } from '@/object-record/utils/generateFindManyRecordsQuery';
 import { ViewFilter } from '@/views/types/ViewFilter';
 import { ViewFilterOperand } from '@/views/types/ViewFilterOperand';
-import { relationFilterValueSchemaObject } from '@/views/view-filter-value/validation-schemas/jsonRelationFilterValueSchema';
 import { isDefined } from 'twenty-shared/utils';
 
 const filterQueryParamsSchema = z.object({
@@ -24,7 +23,7 @@ const filterQueryParamsSchema = z.object({
     .record(
       z.record(
         z.nativeEnum(ViewFilterOperand),
-        z.string().or(z.array(z.string())).or(relationFilterValueSchemaObject),
+        z.string().or(z.array(z.string())),
       ),
     )
     .optional(),
@@ -103,18 +102,12 @@ export const useViewFromQueryParams = () => {
                         .getValue()
                     : null;
 
-                const satisfiesRelationFilterSchema =
-                  relationFilterValueSchemaObject.safeParse(
-                    filterValueFromURL,
-                  )?.success;
-
                 const relationRecordNames = [];
 
                 if (
                   isNonEmptyString(relationObjectMetadataNamePlural) &&
                   isDefined(relationObjectMetadataItem) &&
-                  (Array.isArray(filterValueFromURL) ||
-                    satisfiesRelationFilterSchema)
+                  Array.isArray(filterValueFromURL)
                 ) {
                   const queryResult = await apolloClient.query<
                     Record<string, { edges: { node: ObjectRecord }[] }>
@@ -126,13 +119,7 @@ export const useViewFromQueryParams = () => {
                     variables: {
                       filter: {
                         id: {
-                          in: satisfiesRelationFilterSchema
-                            ? (
-                                filterValueFromURL as {
-                                  selectedRecordIds: string[];
-                                }
-                              )?.selectedRecordIds
-                            : filterValueFromURL,
+                          in: filterValueFromURL,
                         },
                       },
                     },
